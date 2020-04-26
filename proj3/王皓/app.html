@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据统计图</title>
+</head>
+<style>
+    .main{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        margin:50px;
+    }
+    .content{
+        font-size:25px;
+        width:150px;
+        height:50px;
+        line-height:50px;
+        text-align:center;
+    }
+    .content:hover{
+        cursor:pointer;
+        background-color:#00965e;
+        color:#fff;
+    }
+</style>
+<body>
+<div class="main">
+    <div class="content" id="bar">柱状折线图</div>
+    <div class="content" id="china">中国地图</div>
+    <div class="content" id="world">世界流向图</div>
+    <div class="content" id="word">姓氏图</div>
+    <div class="content" id="timeline_map">省份人数图</div>
+</div>
+</body>
+<script>
+    document.getElementById("bar").onclick = function(){
+        location.href = "http://127.0.0.1:5000/bar/"
+    }
+    document.getElementById("china").onclick = function(){
+        location.href = "http://127.0.0.1:5000/china/"
+    }
+    document.getElementById("world").onclick = function(){
+        location.href = "http://127.0.0.1:5000/world/"
+    }
+    document.getElementById("word").onclick = function(){
+        location.href = "http://127.0.0.1:5000/word/"
+    }
+    document.getElementById("timeline_map").onclick = function(){
+        location.href = "http://127.0.0.1:5000/timeline_map/"
+    }
+</script>
+</html>
